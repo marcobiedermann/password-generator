@@ -23,7 +23,9 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: 'client/index.html',
+    }),
   ],
   resolve: {
     extensions: [
