@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -11,7 +12,9 @@ module.exports = {
   module: {
     rules: [],
   },
-  plugins: [],
+  plugins: [
+    new HtmlWebpackPlugin(),
+  ],
   resolve: {
     extensions: [
       '.js',
