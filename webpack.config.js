@@ -10,7 +10,17 @@ module.exports = {
     path: path.resolve(__dirname, 'server/public'),
   },
   module: {
-    rules: [],
+    rules: [
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: [
+          {
+            loader: 'babel-loader',
+          },
+        ],
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin(),
