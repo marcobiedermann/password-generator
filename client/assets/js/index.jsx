@@ -1,6 +1,4 @@
-import {
-  Card, CardContent, Checkbox, FormControlLabel, TextField,
-} from '@material-ui/core';
+import { Card, CardContent, Checkbox, FormControlLabel, TextField } from '@material-ui/core';
 import React from 'react';
 import { render } from 'react-dom';
 
@@ -12,25 +10,13 @@ const App = () => (
           <TextField />
         </div>
         <div>
-          <FormControlLabel
-            control={<Checkbox />}
-            label="Numbers"
-            value="numbers"
-          />
+          <FormControlLabel control={<Checkbox />} label="Numbers" value="numbers" />
         </div>
         <div>
-          <FormControlLabel
-            control={<Checkbox />}
-            label="Symbols"
-            value="symbols"
-          />
+          <FormControlLabel control={<Checkbox />} label="Symbols" value="symbols" />
         </div>
         <div>
-          <FormControlLabel
-            control={<Checkbox />}
-            label="Uppercase"
-            value="uppercase"
-          />
+          <FormControlLabel control={<Checkbox />} label="Uppercase" value="uppercase" />
         </div>
         <div>
           <FormControlLabel
