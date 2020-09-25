@@ -1,8 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
-const webpackMerge = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const baseConfig = require('./webpack.config');
 
-module.exports = webpackMerge(baseConfig, {
+module.exports = merge(baseConfig, {
   devtool: 'source-map',
   mode: 'production',
 });
